@@ -5,16 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --config ./webpack/webpack.config.dev.js",
+    "build:dev": "webpack --config ./webpack/webpack.config.dev.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vue": "^2.5.21"
+    "element-ui": "^2.4.11",
+    "vue": "^2.5.21",
+    "vue-router": "^3.0.2"
   },
   "dependencies": {
+    "autoprefixer": "^8.6.2",
+    "node-sass": "^4.8.3",
+    "babel-plugin-component": "^1.1.1",
     "css-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^2.0.0",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.5.21",
     "webpack": "^4.27.1",
