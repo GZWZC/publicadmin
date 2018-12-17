@@ -5,7 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = function(options = {}){
     let { isProduction } = options;
     var config = {
-        entry: './index.js',
+        entry: './src/index.js',
         output: {
             filename: 'bundle.js',
             path: isProduction ? path.resolve(__dirname, "../dist") : path.resolve(__dirname, "../dist-dev"),
@@ -58,7 +58,7 @@ module.exports = function(options = {}){
         resolve: {
             extensions: ['.ts', '.vue', '.js', '.scss', '.css'],
             alias: {
-                '@': path.resolve('./')
+                '@': path.resolve('./src/')
             }
         },
         plugins: [

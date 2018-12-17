@@ -8,7 +8,8 @@ let routes = [
     {
         path: '/',
         name: 'HelloWorld',
-        component: HelloWorld
+        component: HelloWorld,
+        props: true
     }
 ];
 
